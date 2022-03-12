@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>html编辑器</title>
+</head>
+
+<body>
+	<div id="div1">
+    <p>正文</p>
+</div>
+<script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/wangeditor@latest/dist/wangEditor.min.js"
+></script>
+<script type="text/javascript">
+  const E = window.wangEditor
+  const editor = new E("#div1")
+  // 或者 const editor = new E(document.getElementById('div1'))
+  editor.create()
+</script>
+</body>
+</html>
